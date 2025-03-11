@@ -1,4 +1,11 @@
-#include "get_next_line.h"
+#include  <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+
+#ifndef BUFFER_SIZE
+#define BUFFER_SIZE 1024
+#endif
 
 int	gnl_strlen(char *str)
 {
