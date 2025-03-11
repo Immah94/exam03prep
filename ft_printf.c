@@ -18,6 +18,8 @@ void	ft_putnbr(long long int nbr, int base, int *size)
 {
 	char *digits = "0123456789abcdef";
 
+	if (base == 16)
+                nbr = (unsigned int)nbr;
 	if(nbr < 0)
 	{
 		*size = *size + 1;
